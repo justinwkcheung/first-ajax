@@ -30,4 +30,9 @@ Step 3
 Step 4
 
 3. What is the new HTTP status code?
-- 500 Internal Server Error 
+- 500 Internal Server Error
+
+Step 6
+
+2. Switch back and forth between the /ping and /pong URLs, reloading the page and running your request each time. What do you see in your Developer Tools? What messages show up in your console?
+- both have XHR finished loading - but fail has 500 internal server error
