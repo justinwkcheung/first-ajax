@@ -26,3 +26,8 @@ Step 3
 
 3. Click on the request. This displays a detailed view of this one request. Investigate the "Response" and "Preview" sub-tabs. What was the content of the response?
 - Wow what a ride! I came all the way from the server!
+
+Step 4
+
+3. What is the new HTTP status code?
+- 500 Internal Server Error 
