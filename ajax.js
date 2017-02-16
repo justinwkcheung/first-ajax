@@ -24,6 +24,16 @@ $(document).ready(function () {
     }).done(function(data){
       $('#step7').append(data);
     });
+  });
+
+  $('#step8 button').on('click', function() {
+    $.ajax({
+      url: 'http://first-ajax-api.herokuapp.com/time',
+      method: 'GET',
+      data: { timezone: 'America/Mexico_City'}
+    }).done(function(data) {
+      $('#step8').append(data);
+    });
 
   });
 
