@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $('#step12 button').on('click', function() {
+  $('#step3456 button').on('click', function() {
     $.ajax({
       url: 'http://first-ajax-api.herokuapp.com/pong',
       method: 'GET',
@@ -30,11 +30,21 @@ $(document).ready(function () {
     $.ajax({
       url: 'http://first-ajax-api.herokuapp.com/time',
       method: 'GET',
-      data: { timezone: 'America/Mexico_City'}
+      data: { timezone: 'America/Mexico_City'},
+      dataType: 'text'
     }).done(function(data) {
       $('#step8').append(data);
     });
+  });
 
+  $('#step9 button').on('click', function() {
+    $.ajax({
+      url: 'http://first-ajax-api.herokuapp.com/a_car',
+      method: 'GET',
+      dataType: 'html'
+    }).done(function(data) {
+      $('#9list').append(data);
+    });
   });
 
 

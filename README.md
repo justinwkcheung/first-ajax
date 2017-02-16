@@ -36,3 +36,10 @@ Step 6
 
 2. Switch back and forth between the /ping and /pong URLs, reloading the page and running your request each time. What do you see in your Developer Tools? What messages show up in your console?
 - both have XHR finished loading - but fail has 500 internal server error
+
+Step 9
+
+3. Investigate the Request and Response "Headers" in your Network Tab. What is the 'Accepts' of the Request, and the 'Content-Type' of the response?
+
+- Accepts text/html
+- content-type: text/html 
