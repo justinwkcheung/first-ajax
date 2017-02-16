@@ -9,9 +9,11 @@ $(document).ready(function () {
     }).done(function(data) {
         console.log('Successfully pulled some data');
         $('#step3456').append(data);
-    }).fail(function() {
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        var text = jqXHR.responseText;
         console.log('Something has gone terribly wrong');
         $('#step3456').append('Sorry, bad link, will try harder next time!!')
+        $('#step3456').append(text);
     }).always(function(){
         console.log("Hey the request finished!");
     });
